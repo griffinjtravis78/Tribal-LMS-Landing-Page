@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Griffin Consulting | Sovereign Digital Learning Portals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col justify-between">
+    <div>
+        <!-- Navigation Header -->
+        <nav class="bg-slate-800 border-b border-slate-700 px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-2">
+                <span class="text-xl font-bold text-blue-400">Griffin Consulting</span>
+                <span class="text-xs bg-blue-600/20 text-blue-400 border border-blue-600/30 px-2 py-0.5 rounded font-semibold">Sovereign Cultural Portals</span>
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="#sandbox-demo" class="px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-lg text-sm font-semibold transition">Explore Curriculum Sandbox</a>
+                <a href="#pilot-pricing" class="px-4 py-2 bg-slate-700 hover:bg-slate-600 text-slate-200 rounded-lg text-sm font-semibold transition">$3,500 Pilot Offer</a>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <header class="max-w-6xl mx-auto px-6 py-16 text-center">
+            <div class="inline-block mb-4 px-3 py-1 bg-blue-900/50 border border-blue-500/30 rounded-full text-blue-300 text-xs font-semibold tracking-wide uppercase">
+                Cultural Digital Sovereignty for Sovereign Nations
+            </div>
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-6">
+                Preserving Tribal Heritage, Language, & Oral Histories in Secure Digital Vaults
+            </h1>
+            <p class="text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed mb-8">
+                As a fellow tribal citizen and author (<em>Tales of the Wyandotte</em>), my work is driven by a deep realization: our elders are our greatest libraries. Capturing their wisdom, language fluency, and traditional stories in a secure, sovereign digital home while they are still with us is an urgent act of cultural stewardship.
+            </p>
+            <div class="flex justify-center gap-4 flex-wrap">
+                <a href="#sandbox-demo" class="px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-xl shadow-lg transition">Test Drive Curriculum Modules</a>
+                <a href="#grants-section" class="px-6 py-3 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold rounded-xl transition">View Grant-Funding Guide</a>
+            </div>
+        </header>
+
+        <!-- MAIN INTERACTIVE SANDBOX WITH HARDCODED PACKAGES -->
+        <main id="sandbox-demo" class="max-w-6xl mx-auto px-6 py-16">
+            <div class="text-center mb-10">
+                <h2 class="text-2xl md:text-3xl font-bold text-white">Hardcoded Curriculum Sandbox</h2>
+                <p class="text-slate-400 text-sm mt-2 max-w-2xl mx-auto">Click through the hardcoded cultural learning packages below. No database required—everything is self-contained and loads instantly.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                <!-- Course Package List (Rendered via JavaScript) -->
+                <div class="lg:col-span-1 bg-slate-900 p-5 rounded-xl border border-slate-700">
+                    <h3 class="text-sm font-semibold uppercase tracking-wider text-blue-400 mb-4">Curriculum Packages</h3>
+                    <div id="course-list-container" class="space-y-3">
+                        <!-- Populated dynamically by script below -->
+                    </div>
+                </div>
+
+                <!-- Lesson Player Area -->
+                <div class="lg:col-span-2 bg-slate-900 p-6 rounded-xl border border-slate-700 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 id="player-course-title" class="text-lg font-bold text-blue-400">Select a Package</h3>
+                            <span id="player-ceu" class="text-xs bg-emerald-600/20 text-emerald-400 px-3 py-1 rounded-full font-semibold">0.0 CEUs</span>
+                        </div>
+                        <p id="player-course-desc" class="text-slate-300 text-sm mb-6">Select a learning package on the left to view modules, audio lessons, and embedded reading materials.</p>
+                        
+                        <div id="lessons-container" class="space-y-3">
+                            <!-- Lessons appear here -->
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800 flex justify-between items-center text-xs text-slate-400">
+                        <span>🔒 Zero Trackers &bull; 100% Tribal Ownership</span>
+                        <span class="text-blue-400">Griffin Consulting Static Engine</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Pilot Offer & Grants Section -->
+        <section id="pilot-pricing" class="bg-slate-800/50 border-t border-slate-800 py-16">
+            <div class="max-w-5xl mx-auto px-6">
+                <div class="bg-slate-800 border border-slate-700 rounded-2xl p-8 md:p-12 shadow-2xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <span class="text-xs bg-blue-600/20 text-blue-400 px-3 py-1 rounded-full font-semibold">Low-Risk Starting Point</span>
+                        <h2 class="text-3xl font-extrabold text-white mt-3 mb-4">The $3,500 Cultural Curriculum Pilot</h2>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                            Test our secure framework with a single traditional story, language lesson, or oral history module. Delivered in just two weeks with zero administrative burden and complete tribal ownership.
+                        </p>
+                    </div>
+                    <div id="grants-section" class="bg-slate-900 p-6 rounded-xl border border-slate-700 space-y-4">
+                        <h3 class="font-bold text-blue-400 text-base">Built for Federal & Foundation Grants</h3>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            Easily cover pilot and full platform investments using existing federal cultural preservation budgets (ANA, NEH, IMLS).
+                        </p>
+                        <a href="mailto:contact@talesofthewyandotte.us" class="block w-full text-center py-3 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-lg text-sm transition mt-4">Request Pilot Proposal</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Universal Legal Footer -->
+    <footer class="bg-slate-900 border-t border-slate-800 text-slate-400 text-xs py-6">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+            <p>© 2026 Griffin Consulting. All rights reserved. Strategy | Performance | People.</p>
+            <div class="flex flex-wrap gap-4 justify-center">
+                <button onclick="window.openLegalModal('terms')" class="hover:text-blue-400 transition rounded px-1">Terms of Service</button>
+                <button onclick="window.openLegalModal('privacy')" class="hover:text-blue-400 transition rounded px-1">Privacy Policy</button>
+                <button onclick="window.openLegalModal('ip')" class="hover:text-blue-400 transition rounded px-1">IP & Copyright</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Hardcoded Curriculum Script -->
+    <script>
+        // HARDCODED LEARNING PACKAGES DATA
+        const curriculumPackages = [
+            {
+                id: 1,
+                title: "Wyandotte Language & Traditional Storytelling",
+                description: "Audio-immersed narrative module focusing on traditional river stories, vocabulary, and pronunciation guides.",
+                ceuCredits: "1.5 CEUs",
+                category: "Language & Lore",
+                lessons: [
+                    { title: "Module 1.1: Little Turtle's Journey (Audio Narration)", type: "Audio", duration: "12 mins" },
+                    { title: "Module 1.2: River Vocabulary & Pronunciation Guide", type: "Interactive Text", duration: "20 mins" },
+                    { title: "Module 1.3: Traditional Story Quiz & Reflection", type: "Assessment", duration: "10 mins" }
+                ]
+            },
+            {
+                id: 2,
+                title: "Tribal Historic Preservation (THPO) Archive",
+                description: "Secure digital vault storing historical documents, maps, and oral history interview logs for community members.",
+                ceuCredits: "2.0 CEUs",
+                category: "Oral History",
+                lessons: [
+                    { title: "Module 2.1: Overview of Tribal Archives & Stewardship", type: "Video", duration: "15 mins" },
+                    { title: "Module 2.2: Accessing Restricted Historical Maps", type: "Document", duration: "25 mins" },
+                    { title: "Module 2.3: Oral History Preservation Best Practices", type: "Audio", duration: "18 mins" }
+                ]
+            }
+        ];
+
+        // Render Course List on Load
+        function renderCourses() {
+            const container = document.getElementById('course-list-container');
+            container.innerHTML = curriculumPackages.map(pkg => `
+                <div onclick="selectPackage(${pkg.id})" class="p-4 bg-slate-800 hover:border-blue-500 border border-slate-700 rounded-lg cursor-pointer transition">
+                    <span class="text-xs bg-blue-600/20 text-blue-400 px-2 py-0.5 rounded">${pkg.category}</span>
+                    <h4 class="font-bold text-sm text-slate-100 mt-2">${pkg.title}</h4>
+                    <p class="text-xs text-slate-400 mt-1 line-clamp-2">${pkg.description}</p>
+                    <div class="flex justify-between items-center mt-3 text-xs">
+                        <span class="text-slate-400">${pkg.lessons.length} Modules</span>
+                        <span class="text-emerald-400 font-semibold">${pkg.ceuCredits}</span>
+                    </div>
+                </div>
+            `).join('');
+
+            // Automatically select the first package on load
+            if (curriculumPackages.length > 0) {
+                selectPackage(curriculumPackages[0].id);
+            }
+        }
+
+        // Handle Package Selection
+        window.selectPackage = function(id) {
+            const pkg = curriculumPackages.find(p => p.id === id);
+            if (!pkg) return;
+
+            document.getElementById('player-course-title').textContent = pkg.title;
+            document.getElementById('player-course-desc').textContent = pkg.description;
+            document.getElementById('player-ceu').textContent = pkg.ceuCredits;
+
+            const lessonsContainer = document.getElementById('lessons-container');
+            lessonsContainer.innerHTML = pkg.lessons.map((lesson, idx) => `
+                <div class="flex justify-between items-center bg-slate-800 p-3.5 rounded-lg border border-slate-700 text-xs">
+                    <div>
+                        <span class="text-blue-400 font-mono mr-2">[${lesson.type}]</span>
+                        <strong class="text-slate-200">${lesson.title}</strong>
+                        <span class="text-slate-400 ml-2">(${lesson.duration})</span>
+                    </div>
+                    <button onclick="alert('Launching hardcoded module: ${lesson.title}. In your live pilot, this opens your custom video, audio player, or interactive text.')" class="px-3 py-1 bg-blue-600 hover:bg-blue-500 text-white rounded font-semibold transition">Launch</button>
+                </div>
+            `).join('');
+        };
+
+        // Initialize on page load
+        window.onload = renderCourses;
+    </script>
+</body>
+</html>
